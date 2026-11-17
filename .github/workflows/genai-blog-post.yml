@@ -6,8 +6,6 @@ permissions:
     models: read
 on:
     workflow_dispatch:
-    schedule:
-        - cron: "0 0 * * *"
 concurrency:
     group: blog-post-${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: true
