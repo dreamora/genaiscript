@@ -2,8 +2,6 @@ name: genai tests
 
 on:
     workflow_dispatch:
-    schedule:
-        - cron: "0 7 * * *"
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: true
